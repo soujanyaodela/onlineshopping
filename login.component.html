@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+            <div class="col-md-6 offset-md-3">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" formControlName="firstName" [ngClass]="{'is-invalid':submitted && registerForm.controls['firstName'].errors}" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                    <label for="lirstname">Last Name:</label>
+                                    <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <dt>Email</dt>
+                                <dd><input formControlName="email" type="email"class="form-control"></dd>
+                                    
+                            </div>
+
+                            <div class="form-group">
+                                <dt>Password</dt>
+                                <dd ><input formControlName="password" type="Password" class="form-control"></dd>
+                                
+                            </div>
+                           
+                            <div class="form-group">
+                                <a class="btn btn-primary" routerLink="/womens"> <div (click)="onSubmit()">
+                                            Register</div>
+                                    </a>
+                            </div>
+                    </form>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-fluid" style="background-image: url(../../../assets/my2.jpg); background-size: cover;">
+   
+    <div style="background-color: rgba(0,0,0,0.3); height: 400px; width:100%;">
+    <div id="register">
+        <h3><span class="bi bi-person"></span>Profile</h3>
+            <form>
+                <dl>
+                    <dt>UserName</dt>
+                    <dd><input formControlName="fullname" type="text" class="form-control"></dd>
+                    <dt>Password</dt>
+                    <dd ><input formControlName="password" type="Password" class="form-control"></dd>
+                    <dt>Email</dt>
+                    <dd><input formControlName="email" type="email"class="form-control"></dd>
+                    <dt>Mobile</dt>
+                    <dd><input formControlName="mobile" type="text" class="form-control"></dd>
+                </dl>
+            </form>
+    <button class="btn btn-primary" (click)="signUp()">Sign Up</button>
+    <button class="btn btn-danger" mat-dialog-close>Close</button>
+        </div>
+    </div>
+    </div>
